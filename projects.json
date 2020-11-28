@@ -1,0 +1,100 @@
+{
+	"projectData": [{
+		"title": "2D Spaceship Physics",
+		"subtitle": "2020<br>Unity/C#<br>Android",
+		"body": ["<p>",
+			"Simple 2D spaceship physics for a little mobile game.",
+			"My goal was to make a vehicle that can handle fast action and take big jumps with ease.",
+			"Code wise I wanted to make sure that it was easy to modify different features and new ones.",
+			"</p>",
+			"<p>",
+			"It uses 4 custom Raycast wheels as springs to add suspension force and friction to the vehicle.",
+			"</p>",
+
+			"<p>",
+			"Instead of using the friction from the wheels to turn the vehicle, it uses a PID controller to rotate the vehicle to the desired direction.",
+			"</p>",
+
+			"<p>",
+			"Different assists can be added to change the behaviour of the vehicle, e.g. drifting, jumping,",
+			"</p>"
+		],
+		"media": [
+            {
+				"url": "media/00/"
+			},
+			{
+				"url": "media/01.jpg"
+            }
+		]
+	},{
+		"title": "Arcade Vehicle Physics",
+		"subtitle": "2020<br>Unity/C#<br>Android",
+		"body": ["<p>",
+			"Arcade vehicle physics using Rigidbodies for a mobile game.",
+			"My goal was to make a vehicle that can handle fast action and take big jumps with ease.",
+			"Code wise I wanted to make sure that it was easy to modify different features and new ones.",
+			"</p>",
+			"<p>",
+			"It uses 4 custom Raycast wheels as springs to add suspension force and friction to the vehicle.",
+			"</p>",
+
+			"<p>",
+			"Instead of using the friction from the wheels to turn the vehicle, it uses a PID controller to rotate the vehicle to the desired direction.",
+			"</p>",
+
+			"<p>",
+			"Different assists can be added to change the behaviour of the vehicle, e.g. drifting, jumping,",
+			"</p>"
+		],
+		"media": [
+            {
+				"url": "media/01/00.mp4"
+			},
+			{
+				"url": "media/01.jpg"
+            }
+		]
+	},{
+		"title": "Hyper Casual Prototype",
+		"subtitle": "2019<br>Unity/C#<br>Android",
+		"body": ["<p>",
+			"A simple hyper casual prototype game for Android devices I made for my thesis.",
+			"My goal was to make a vehicle that can handle fast action and take big jumps with ease.",
+			"Code wise I wanted to make sure that it was easy to modify different features and new ones.",
+			"</p>",
+			"<p>",
+			"It uses 4 custom Raycast wheels as springs to add suspension force and friction to the vehicle.",
+			"</p>",
+
+			"<p>",
+			"Instead of using the friction from the wheels to turn the vehicle, it uses a PID controller to rotate the vehicle to the desired direction.",
+			"</p>",
+
+			"<p>",
+			"Different assists can be added to change the behaviour of the vehicle, e.g. drifting, jumping,",
+			"</p>"
+		],
+		"media": [
+            {
+				"url": "media/02/00.mp4"
+			},
+			{
+				"url": "media/01.jpg"
+            }
+		]
+	},{
+		"title": "Guild Inc",
+		"subtitle": "2018 Red Shirt Games<br>Unity/C#<br>Android",
+		"body": ["<p>",
+			"An idle game where you manage a fantasy themend inn.",
+			"I mostly worked on stuff",
+			"</p>"
+		],
+		"media": [
+            {
+				"url": "media/01.jpg"
+            }
+		]
+	}]
+}
