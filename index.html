@@ -31,13 +31,16 @@
 
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
+    <!-- in your header -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
 
     <script src="https://kit.fontawesome.com/0a6c7bf19c.js" crossorigin="anonymous"></script>
   </head>
 
   <body class="">
 
-    <div class="cover-container d-flex w-100 p-3 mx-auto flex-column text-center">
+    <div class="mw-75 d-flex w-100 p-3 mx-auto flex-column text-center">
       <header class="masthead mb-auto">
         <div class="inner">
           <h3 class="masthead-brand">Santtu Niskala</h3>
@@ -55,24 +58,87 @@
 
         <img src="media/avatar1.jpg" class="rounded avatar" alt="Profile picture">
         
-        <h1 class="display-3">About</h1>
+        <h1 class="display-3">Hello!</h1>
         <p class="lead text-muted">
-          I've been using Unity and C# since 2013, mostly working on mobile games for Android devices. 
-          I've also casually used 3DS Max to model low-poly models from time to time for over 10 years.
+          I'm a <span id="age"></span> year old programmer currently living in Oulu, Finland.
         </p>
 
-        <p class="lead text-muted">
-          I've also casually used 3DS Max to model low-poly models from time to time for over 10 years.
-        </p>
+        <h3 class="text-center display-5 text-muted">Languages</h3>
 
-        <p class="lead text-muted">
-          At my University, I learned the basics of HTML, CSS, PHP, and other web-technologies.
-        </p>
+        <div class="container">
+        <div class="row" id="skills-container">
+          <div class="col p-1">
+            <div class="p-0 bg-secondary rounded">
+              <h3 class="bg-info rounded display-5"><i class="devicon-csharp-plain" title="C#"></i></h3>
+            <p class="p-2 text-left font-weight-light">My primary programming language since 2014.</p>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="p-0 bg-secondary rounded">
+              <h3 class="bg-info rounded display-5"><i class="devicon-javascript-plain" title="JavaScript"></i></h3>
+            <p class="p-2 text-left">My secondary programming language.</p>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="p-0 bg-secondary rounded">
+              <h3 class="bg-info rounded display-5"><i class="devicon-java-plain" title="Java"></i></h3>
+            <p class="p-2 text-left">We used Java to make simple apps at University.</p>
+            </div>
+          </div>
+
+          <div class="w-100"></div>
+
+          <div class="col p-1">
+            <div class="p-0 bg-secondary rounded">
+              <h3 class="bg-info rounded display-5"><i class="devicon-html5-plain" title="HTML5"></i>+<i class="devicon-css3-plain" title="CSS3"></i></h3>
+            <p class="p-2 text-left">I learned the basics of HTML and CSS while in University.</p>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="p-0 bg-secondary rounded">
+              <h3 class="bg-info rounded display-5"><i class="devicon-php-plain" title="PHP"></i></h3>
+            <p class="p-2 text-left">We used PHP at University to make simple websites that utilized databases.</p>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="p-0 bg-secondary rounded">
+              <h3 class="bg-info rounded display-5"> <i class="devicon-mysql-plain" title="MySQL"></i></h3>
+            <p class="p-2 text-left">We learned about databases with MySQL at University.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <h3 class="text-center display-5 text-muted">Software</h3>
+        <div class="row" id="software-container">
+          <div class="col p-1">
+            <div class="p-0 bg-secondary rounded">
+              <h3 class="bg-info rounded display-5"><i class="fab fa-unity" title="Unity"></i></h3>
+            <p class="p-2 text-left">My primary game engine since 2013.<br><br></p>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="p-0 bg-secondary rounded">
+              <h3 class="bg-info rounded display-5">3DS Max</h3>
+            <p class="p-2 text-left">I've occasionally modeled low-poly 3D models for games for over 10 years.</p>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="p-0 bg-secondary rounded">
+              <h3 class="bg-info rounded display-5"><i class="devicon-photoshop-plain" title="Photoshop"></i></h3>
+            <p class="p-2 text-left">I've used Photoshop to make and edit textures for 3D models.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       </div>
     </div>
   
     <div id="Projects" class="container-fluid">
-      <h1 class="text-center display-3 text-muted">Projects</h1>
+      <h1 class="text-center display-3">Projects</h1>
 
       <div class="row" id="projects-container">
       </div>

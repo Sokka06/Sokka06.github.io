@@ -4,6 +4,10 @@ $(document).ready(function() {
         console.log("An error has occurred.");
     })
     
+    
+    document.getElementById("age").innerHTML = calculate_age(new Date(1994, 4, 7));
+
+    
 });
 
 function CreateProjects(data)
@@ -13,11 +17,11 @@ function CreateProjects(data)
     for (var i = 0; i < data.projectData.length; ++i) 
     {
     
-        container.append('<hr class="my-4">');
+        //container.append('<hr class="my-4">');
 
         var projectData = data.projectData[i];
         
-        var row = $('<div class="row px-5 py-5' + (i % 2 === 0 ? '' : ' bg-dark') + '">');
+        var row = $('<div class="row p-5 w-100' + (i % 2 === 0 ? '' : ' bg-dark') + '">');
 
         var col1 = (i % 2 === 0 ? MakeText(projectData) : MakeCarousel(projectData, i));
         row.append(col1);
@@ -48,7 +52,7 @@ function MakeCarousel(data, index)
 {
     var id = 'projectCarousel' + index;
     var col2 = $('<div class="col">');
-    var carousel = $('<div id="' + id +'" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">');
+    var carousel = $('<div id="' + id +'" class="carousel slide" data-ride="carousel" data-interval="false">');
 
     var indicatorList = $('<ol class="carousel-indicators">');
     for (var i = 0; i < data.media.length; ++i) 
@@ -96,11 +100,11 @@ function CarouselItem(media)
     switch (get_url_extension(media.url))
     {
         case 'jpg':
-            item = '<img src="' + media.url + '" class="rounded d-block w-100 h-auto" style="max-height: 24em;" alt="...">';
+            item = '<img src="' + media.url + '" class="rounded mx-auto d-block carousel-media" alt="...">';
             break;
         case 'mp4':
             item = 
-            '<video class="rounded w-100 h-auto" style="max-height: 24em;" autoplay loop muted>' +
+            '<video class="rounded w-100 h-auto carousel-media" autoplay loop muted>' +
                 '<source src="' + media.url +'" type="video/mp4" />' +
             '</video>';
             break;
@@ -110,4 +114,11 @@ function CarouselItem(media)
 
 function get_url_extension( url ) {
     return url.split(/[#?]/)[0].split('.').pop().trim();
+}
+
+function calculate_age(dob) { 
+    var diff_ms = Date.now() - dob.getTime();
+    var age_dt = new Date(diff_ms); 
+  
+    return Math.abs(age_dt.getUTCFullYear() - 1970);
 }

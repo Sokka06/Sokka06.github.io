@@ -1,50 +1,45 @@
 {
 	"projectData": [{
-		"title": "2D Spaceship Physics",
+		"title": "2D Spaceship Controller",
 		"subtitle": "2020<br>Unity/C#<br>Android",
 		"body": ["<p>",
-			"Simple 2D spaceship physics for a little mobile game.",
-			"My goal was to make a vehicle that can handle fast action and take big jumps with ease.",
-			"Code wise I wanted to make sure that it was easy to modify different features and new ones.",
-			"</p>",
-			"<p>",
-			"It uses 4 custom Raycast wheels as springs to add suspension force and friction to the vehicle.",
-			"</p>",
-
-			"<p>",
-			"Instead of using the friction from the wheels to turn the vehicle, it uses a PID controller to rotate the vehicle to the desired direction.",
-			"</p>",
-
-			"<p>",
-			"Different assists can be added to change the behaviour of the vehicle, e.g. drifting, jumping,",
-			"</p>"
+			"Simple 2D spaceship controller with a Rigidbody for a little mobile game.</p>",
+			"<p>Player's objective in the game is to extract subjects and get to the end of the level without taking too much damage to their hull or dome. Hits to the dome are one hit kills when colliding with enough force, whereas the hull can take hits until it's health reaches zero.</p>",
+			"<p>Player controls the spaceship's thrusters by pressing down on the screen. ",
+			"Player can press down on both sides of the screen to go straight upwards or rotate the ship by pressing down on one side of the screen.</p>",
+			"<p>Spaceship's legs use similar Raycast force springs as what I used for my vehicle controller. The visual part of legs use Unity's 2D IK package to position them to where the springs make contact with ground.</p>",
+			"<p>I used a similar components based approach as I did with my vehicle controller.</p>"
 		],
 		"media": [
             {
-				"url": "media/00/"
+				"url": "media/00/00.mp4"
 			},
 			{
-				"url": "media/01.jpg"
-            }
+				"url": "media/00/01.jpg"
+			},
+			{
+				"url": "media/00/02.jpg"
+			}
 		]
 	},{
-		"title": "Arcade Vehicle Physics",
+		"title": "Arcade Vehicle Controller",
 		"subtitle": "2020<br>Unity/C#<br>Android",
 		"body": ["<p>",
-			"Arcade vehicle physics using Rigidbodies for a mobile game.",
+			"Arcade vehicle controller using a Rigidbody for a mobile game.",
 			"My goal was to make a vehicle that can handle fast action and take big jumps with ease.",
-			"Code wise I wanted to make sure that it was easy to modify different features and new ones.",
 			"</p>",
 			"<p>",
 			"It uses 4 custom Raycast wheels as springs to add suspension force and friction to the vehicle.",
 			"</p>",
 
 			"<p>",
-			"Instead of using the friction from the wheels to turn the vehicle, it uses a PID controller to rotate the vehicle to the desired direction.",
+			"Instead of using the friction from the wheels to turn the vehicle, it uses a PID controller to rotate the vehicle to the desired direction. This is done to have direct control over the vehicle's heading.",
 			"</p>",
 
 			"<p>",
-			"Different assists can be added to change the behaviour of the vehicle, e.g. drifting, jumping,",
+			"Different assists can be added to change the behaviour of the vehicle, e.g. drifting, jumping,</p>",
+			"<p>",
+			"Code wise I wanted to make sure that it was easy to modify and add new features. I achieved this by seperating different features into their own components.",
 			"</p>"
 		],
 		"media": [
@@ -52,7 +47,10 @@
 				"url": "media/01/00.mp4"
 			},
 			{
-				"url": "media/01.jpg"
+				"url": "media/01/01.mp4"
+            },
+			{
+				"url": "media/01/02.jpg"
             }
 		]
 	},{
@@ -60,19 +58,6 @@
 		"subtitle": "2019<br>Unity/C#<br>Android",
 		"body": ["<p>",
 			"A simple hyper casual prototype game for Android devices I made for my thesis.",
-			"My goal was to make a vehicle that can handle fast action and take big jumps with ease.",
-			"Code wise I wanted to make sure that it was easy to modify different features and new ones.",
-			"</p>",
-			"<p>",
-			"It uses 4 custom Raycast wheels as springs to add suspension force and friction to the vehicle.",
-			"</p>",
-
-			"<p>",
-			"Instead of using the friction from the wheels to turn the vehicle, it uses a PID controller to rotate the vehicle to the desired direction.",
-			"</p>",
-
-			"<p>",
-			"Different assists can be added to change the behaviour of the vehicle, e.g. drifting, jumping,",
 			"</p>"
 		],
 		"media": [
@@ -80,20 +65,42 @@
 				"url": "media/02/00.mp4"
 			},
 			{
-				"url": "media/01.jpg"
+				"url": "media/02/01.mp4"
+			},
+			{
+				"url": "media/02/02.jpg"
+            },
+			{
+				"url": "media/02/03.jpg"
             }
 		]
 	},{
-		"title": "Guild Inc",
-		"subtitle": "2018 Red Shirt Games<br>Unity/C#<br>Android",
+		"title": "Language Game Prototype",
+		"subtitle": "Red Shirt Games 2019<br>Unity/C#<br>Android",
 		"body": ["<p>",
-			"An idle game where you manage a fantasy themend inn.",
-			"I mostly worked on stuff",
+			"A game where you learn  University of Oulu.",
 			"</p>"
 		],
 		"media": [
             {
-				"url": "media/01.jpg"
+				"url": "media/03/00.mp4"
+			}
+		]
+	},{
+		"title": "Guild Inc",
+		"subtitle": "Red Shirt Games 2018<br>Unity/C#<br>Android",
+		"body": ["<p>An idle game where you manage a fantasy themend inn.</p>",
+			"<p>I focused on implementing ingame events, daily rewards and notifications.</p>"
+		],
+		"media": [
+			{
+				"url": "media/04/00.mp4"
+            },
+            {
+				"url": "media/04/01.jpg"
+			},
+			{
+				"url": "media/04/02.jpg"
             }
 		]
 	}]

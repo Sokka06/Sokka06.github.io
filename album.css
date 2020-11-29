@@ -47,7 +47,7 @@ footer p {
 }
 
 .cover-container {
-  max-width: 42em;
+   max-width: 75%; 
 }
 
 .carousel-indicators {
@@ -102,4 +102,12 @@ footer p {
   width: 100%;
   max-width: 16em;
   max-height: 16em;
+}
+
+.carousel-media{
+  max-height: 48em;
+}
+
+.mw-75 {
+  max-width: 75%; 
 }
