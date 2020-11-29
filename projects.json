@@ -8,7 +8,7 @@
 			"<p>Player controls the spaceship's thrusters by pressing down on the screen. ",
 			"Player can press down on both sides of the screen to go straight upwards or rotate the ship by pressing down on one side of the screen.</p>",
 			"<p>Spaceship's legs use similar Raycast force springs as what I used for my vehicle controller. The visual part of legs use Unity's 2D IK package to position them to where the springs make contact with ground.</p>",
-			"<p>I used a similar components based approach as I did with my vehicle controller.</p>"
+			"<p>I also used a similar components based approach for this as I did with my vehicle controller.</p>"
 		],
 		"media": [
             {
@@ -26,20 +26,21 @@
 		"subtitle": "2020<br>Unity/C#<br>Android",
 		"body": ["<p>",
 			"Arcade vehicle controller using a Rigidbody for a mobile game.",
-			"My goal was to make a vehicle that can handle fast action and take big jumps with ease.",
 			"</p>",
+			"<p>My goal was to make a vehicle that can handle fast action, different surfaces and take big jumps without losing control.</p>",
 			"<p>",
 			"It uses 4 custom Raycast wheels as springs to add suspension force and friction to the vehicle.",
 			"</p>",
 
 			"<p>",
-			"Instead of using the friction from the wheels to turn the vehicle, it uses a PID controller to rotate the vehicle to the desired direction. This is done to have direct control over the vehicle's heading.",
+			"Instead of using the friction from the wheels to turn the vehicle, it uses a PID controller to rotate the vehicle towards the desired direction. This is done to have a more direct control over the vehicle's turning.",
 			"</p>",
 
 			"<p>",
-			"Different assists can be added to change the behaviour of the vehicle, e.g. drifting, jumping,</p>",
+			"</p>",
 			"<p>",
-			"Code wise I wanted to make sure that it was easy to modify and add new features. I achieved this by seperating different features into their own components.",
+			"Code wise I wanted to make sure that it was easy to modify and add new features to the controller. I achieved this by seperating different features into their own components. ",
+			"This makes it easy to enable and disable different assists, such as drifting, uprighting when off ground, etc.",
 			"</p>"
 		],
 		"media": [
@@ -58,6 +59,21 @@
 		"subtitle": "2019<br>Unity/C#<br>Android",
 		"body": ["<p>",
 			"A simple hyper casual prototype game for Android devices I made for my thesis.",
+			"</p>",
+			"<p>",
+			"The player's objective is to succesfully maneuver a vehicle to the finish line on a randomly generated track.",
+			"</p>",
+			"<p>",
+			"The vehicle did not use any real physics or even a Rigidbody. ",
+			"Instead, it used Kinematic Character Controller asset from Unity asset store, which is usually used for humanoid characters.",
+			"One of the reasons to use KCC instead of Rigidbody physics was to have a very tight control over the vehicle's movement.",
+			"</p>",
+			"<p>",
+			"One of the down sides of using KCC was that it could only use a single Capsule or Sphere collider for it's collisions. ",
+			"This was fine in this case as the game did not require accurate collisions or behaviour.",
+			"</p>",
+			"<p>",
+			"Sadly, I did not have enough time to make a procedural track generator as I had very limited time to finish my thesis.",
 			"</p>"
 		],
 		"media": [
@@ -78,7 +94,10 @@
 		"title": "Language Game Prototype",
 		"subtitle": "Red Shirt Games 2019<br>Unity/C#<br>Android",
 		"body": ["<p>",
-			"A game where you learn  University of Oulu.",
+			"A prototype of a game we made at RSG for University of Oulu where you learn different languages used around Finland.",
+			"</p>",
+			"<p>",
+			"I worked on implementing minigames and loading questions from a JSON file.",
 			"</p>"
 		],
 		"media": [
@@ -89,7 +108,7 @@
 	},{
 		"title": "Guild Inc",
 		"subtitle": "Red Shirt Games 2018<br>Unity/C#<br>Android",
-		"body": ["<p>An idle game where you manage a fantasy themend inn.</p>",
+		"body": ["<p>An idle/clicker game we made at RSG for Android devices where you manage a fantasy themed inn.</p>",
 			"<p>I focused on implementing ingame events, daily rewards and notifications.</p>"
 		],
 		"media": [
