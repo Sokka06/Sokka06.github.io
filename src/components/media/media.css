@@ -1,0 +1,15 @@
+.react-player video {
+	object-fit: cover;
+}
+
+.swiper-button-next {
+	color: white;
+}
+
+.swiper-button-prev {
+	color: white;
+}
+
+.swiper-pagination-bullet {
+	background: white;
+}
