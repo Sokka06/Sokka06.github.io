@@ -1,0 +1,18 @@
+---
+title: "Hyper Casual Prototype"
+date: "2019-11"
+tags: ["Unity", "C#", "Android"]
+media: ["./00.mp4", "./01.mp4", "./02.jpg", "./03.jpg"]
+---
+
+**A simple hyper-casual prototype game for Android devices I made for my thesis.**
+
+The player's objective is to succesfully maneuver their vehicle to the finish line on a randomly generated track.
+
+The vehicle did not use any real physics or a Rigidbody.
+Instead, it used Kinematic Character Controller asset from Unity asset store, which is usually used for humanoid characters.
+One of the reasons to use KCC instead of Rigidbody physics was to have a very tight control over the vehicle's movement.
+
+One downside of using KCC was that it could only use a single Capsule or Sphere collider for it's collisions. In this case this was fine as the game did not require accurate collisions or behaviour.
+
+Sadly, I did not have enough time to make a procedural track generator as I had very limited time to finish my thesis.

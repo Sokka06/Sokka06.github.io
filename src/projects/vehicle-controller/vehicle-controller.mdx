@@ -1,0 +1,16 @@
+---
+title: "Arcade Vehicle Controller"
+date: "2020-03"
+tags: ["Unity", "C#", "Android"]
+media: ["./00.mp4", "./01.mp4", "./02.jpg"]
+---
+
+**Arcade vehicle controller using a Rigidbody for a mobile game.**
+
+My goal was to make a vehicle that can handle fast action, different surfaces and take big jumps without losing control.
+
+It uses 4 custom Raycast wheels as springs to add suspension force and friction to the vehicle.
+
+Instead of using the friction from the wheels to turn the vehicle, it uses a PID controller to rotate the vehicle towards the desired direction. This is done to have a more direct control over the vehicle's turning.
+
+Code wise I wanted to make sure that it was easy to modify and add new features to the controller. I achieved this by seperating different features into their own components. This makes it easy to enable and disable different assists, such as drifting, uprighting when off ground, etc.

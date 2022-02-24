@@ -47,11 +47,9 @@ export default function MediaCarousel (props) {
 }
 
 MediaCarousel.propTypes = {
-	media: PropTypes.array.isRequired,
-	other: PropTypes.string
+	media: PropTypes.array.isRequired
   }
 
   MediaCarousel.defaultProps = {
-	  media: [],
-	  other: []
+	  media: []
   }
