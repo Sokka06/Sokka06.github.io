@@ -1,6 +1,6 @@
 import React, {useEffect} from "react"
 import PropTypes from 'prop-types';
-import { IconButton, Icon, Fade, useBoolean } from "@chakra-ui/react";
+import { Box, IconButton, Icon, Fade, useBoolean } from "@chakra-ui/react";
 import { motion } from "framer-motion"
 
 import { ChevronUpIcon } from '@chakra-ui/icons'
@@ -36,27 +36,46 @@ export default function ScrollToTopButton(props) {
 
 	return (
 		<Fade in={isVisible}>
-			<IconButton
+			<Box
+			as='button'
 			zIndex={'toast'}
 			position={'fixed'}
-			colorScheme={'red'}
-			isRound
-			/* bgGradient={'linear(to-r, green.200, pink.500)'} */
 			right={props.offset.x}
 			bottom={props.offset.y}
-			size={'lg'}
+			height={props.size}
+			padding={'0'}
+			borderRadius={'full'}
+			shadow={'lg'}
+			bgGradient={'linear(to-tr, red.500, pink.400)'}
+			color='gray.100'
+			opacity={'0.75'}
+			transition='all 0.1s cubic-bezier(.08,.52,.52,1)'
+			_hover={{ /* bg: '#ebedf0' */ }}
+			_active={{
+				opacity: '1',
+				transform: 'scale(0.9)',
+				borderColor: '#bec3c9',
+			}}
+			_focus={{/* 
+				boxShadow:
+				'0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)', */
+			}}
 			onClick={OnClick}
-			icon={<ChevronUpIcon width={'full'} height={'full'} />}/>
+			>
+			<ChevronUpIcon width={'full'} height={'full'} />
+			</Box>
 		</Fade>
 	)
 }
 
 ScrollToTopButton.propTypes = {
 	minScroll: PropTypes.number,
-	offset: PropTypes.shape({x: PropTypes.number, y: PropTypes.number})
+	offset: PropTypes.shape({x: PropTypes.number, y: PropTypes.number}),
+	size: PropTypes.number
 }
 
 ScrollToTopButton.defaultProps = {
 	minScroll: 256,
-	offset: {x: 10, y: 10}
+	offset: {x: 10, y: 20},
+	size: 16
 }

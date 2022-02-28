@@ -27,7 +27,7 @@ export default function GithubCard (props) {
 				borderRadius='lg' 
 				shadow='lg' 
 				overflow='hidden'
-				bgGradient='linear-gradient(45deg, #FC8181 30%, #F56565 90%)' >
+				bgGradient='linear(to-tr, red.600, pink.600)' >
 				<LinkOverlay href={props.repo.url} height='full' width='full' >
 					<Flex p='3' direction={'column'} height='full'>
 						<Box 
