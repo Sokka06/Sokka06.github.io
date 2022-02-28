@@ -43,7 +43,6 @@ export default function GithubCard (props) {
 							flex={'1'} 
 							justifySelf={'stretch'} 
 							alignSelf='stretch' 
-							colorScheme='teal' 
 							fontSize={{ base: 'lg', sm: 'md', md: 'sm' }}>
 							{props.repo.description}
 						</Box>
@@ -53,6 +52,7 @@ export default function GithubCard (props) {
 								size={tagSize}
 								borderRadius='full'
 								variant='solid'
+								colorScheme={'red'}
 							>
 								<TagLabel>Unity</TagLabel>
 							</Tag>
@@ -60,6 +60,8 @@ export default function GithubCard (props) {
 								size={tagSize}
 								borderRadius='full'
 								variant='solid'
+								variant='solid'
+								colorScheme={'red'}
 							>
 								<TagLabel>C#</TagLabel>
 							</Tag>

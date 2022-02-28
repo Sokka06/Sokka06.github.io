@@ -8,18 +8,18 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Container, Heading, HStack, Tag, TagLabel, Text, Box, Flex, useBreakpointValue, VStack, AspectRatio, Link, Image, Spacer, Divider } from "@chakra-ui/react";
 
-import MediaCarousel from "./media/MediaCarousel";
+import MediaCarousel from "./media/MediaCarousel"
+
+const components = {
+	h1: Heading,
+	h2: props => <Heading {...props} size='sm' />,
+	p: props => <Text {...props} pb={'2'} />,
+	a: props => <Link {...props} color='teal.500'/>,
+}
 
 export default function ProjectLayout (props) {
 
 	const useCompact = useBreakpointValue({ base: true, md: false })
-
-	const components = {
-        h1: Heading,
-		h2: props => <Heading {...props} size='sm' />,
-		p: props => <Text {...props} pb={'2'} />,
-		a: props => <Link {...props} color='teal.500'/>,
-	}
 
 	return (
 		<>
@@ -35,8 +35,9 @@ export default function ProjectLayout (props) {
 				size='md'
 				borderRadius='full'
 				variant='solid'
+				key={tag}
 				>
-				<TagLabel>{tag}</TagLabel>
+				{tag}
 			</Tag>
 			))}
 		</HStack>

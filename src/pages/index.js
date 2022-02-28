@@ -28,10 +28,14 @@ const IndexPage = () => (
 			<Section name='github'>
 				<Github/>
 			</Section>
+
+			<Empty space={10} />
 			
 			<Section name='projects'>
 				<Projects/>
 			</Section>
+
+			<Empty space={10} />
 
 			<Section name='contact'>
 				<Contact/>

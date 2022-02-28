@@ -40,17 +40,17 @@ const options = {
 	  },
 	  move: {
 		bounce: false,
-		direction: "none",
+		direction: "top",
 		enable: true,
 		outMode: "out",
 		random: true,
-		speed: 1,
-		straight: false,
-		attract: {
+		speed: 5,
+		straight: true,
+		/* attract: {
 			enable: true,
 			rotateX: 600,
 			rotateY: 1200,
-		  }
+		  } */
 	},
 	number: {
         value: 40,

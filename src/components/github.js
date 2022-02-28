@@ -112,7 +112,7 @@ export default function Github() {
 				spacing={5}>
 				{
 				list.map((repo, index) =>
-					<GithubCard repo={repo} delay={index * 1000} />
+					<GithubCard repo={repo} delay={index * 1000} key={repo.id} />
 				)
 				}
 				</MotionGrid>

@@ -3,6 +3,8 @@ import { Box, Heading, Divider } from "@chakra-ui/react"
 import { useStaticQuery, graphql, Link } from "gatsby";
 import ProjectLayout from "./ProjectLayout";
 
+// https://codesandbox.io/s/88kf4?file=/src/ItemList.js pagination
+
 export default function Projects () {
 	const data = useStaticQuery(
 		graphql`
@@ -38,15 +40,15 @@ export default function Projects () {
 		<Heading py={'3'}>Projects</Heading>
 		</Box>
 		{projects.map((project, index) => (
-			<>
-				<ProjectLayout mdx={project} index={index} flip={index % 2 != 0}/>
+			<Box key={project.id}>
+				<ProjectLayout mdx={project} index={index} flip={index % 2 !== 0}/>
 
 				{((index + 1) < projects.length && (
 					<Box py={'3'} px={'10'}>
 						<Divider />
 					</Box>
 				))}
-			</>
+			</Box>
     	))}
 	</Box>
 	)

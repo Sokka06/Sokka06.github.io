@@ -15,7 +15,7 @@ function StackIcon ({item}) {
 	return(
 		<>
 		{item.icon ? 
-			<Icon colorScheme='teal' shadow='sm' as={item.icon} alt={item.name} /> 
+			<Icon shadow='sm' as={item.icon} alt={item.name} /> 
 			: <Text colorScheme='teal' as='span'>{item.name}</Text> }
 		</>
 	)
@@ -40,10 +40,11 @@ export default function Github() {
 						Made with
 					</Text>
 					<HStack>
-					{stack.map((item, index) => (<>
+					{stack.map((item, index) => (
+						<React.Fragment key={item.name}>
 						<StackIcon item={item} />
 						{index + 1 < stack.length && <Text as='span' color='gray.500'>+</Text>}
-						</>
+						</React.Fragment>
 						))}
 					</HStack>
 					<Text fontSize="sm" color='gray.500'>

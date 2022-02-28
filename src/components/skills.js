@@ -39,11 +39,11 @@ export default function Skills () {
 		<Container maxW={'container.lg'} p='5' centerContent>
 		<SimpleGrid columns={{sm: 2, md: 3}} spacingY='3'>
 			{skills.map((item, index) => (
-				<VStack>
+				<VStack key={item.title}>
 					<Heading size={'sm'} fontWeight='semibold' lineHeight='tight'>{item.title}</Heading>
 					<HStack borderWidth='1px' borderRadius='lg' p='3' shadow={'md'}>
 					{item.items.map((name) => (
-						<SkillIcon item={name} />
+						<SkillIcon item={name} key={name.name}/>
 					))}
 					</HStack>
 				</VStack>

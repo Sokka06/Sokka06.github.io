@@ -10,11 +10,9 @@ import {IconButton } from '@chakra-ui/react'
 
 function NavLink({ text, href, ...props })  {
 	return (
-
-				<Box p='2'>
+		<Box p='2'>
 			<Link href={href} fontWeight='bold' colorScheme='teal'>{text}</Link>
-			</Box>
-		
+		</Box>	
 	)
 }
 
@@ -22,8 +20,8 @@ const MotionLink = motion(Link)
 
 function NavButton({ text, href, ...props }) {
 	return (
-	  <MotionLink whileHover={{ scale: 1.1 }} href={href} passHref>
-		  <Button as={'a'} size='md' variant='ghost' {...props}>{text}</Button>
+	  <MotionLink whileHover={{ scale: 1.1 }} href={href} >
+		  <Button size='md' variant='ghost' {...props}>{text}</Button>
 	  </MotionLink>
 	);
   }
@@ -31,21 +29,21 @@ function NavButton({ text, href, ...props }) {
 export default function NavigationDesktop (props) {
 	return (
 		<Box>
-					<HStack>
-					{props.links.map((item) => (
-							<NavButton text={item.name} href={item.href} />
-							))}
-					</HStack>
-				</Box>
+			<HStack>
+				{props.links.map((item) => (
+					<NavButton text={item.name} href={item.href} key={item.name} />
+				))}
+			</HStack>
+		</Box>
 	)
 }
 
 NavigationDesktop.propTypes = {
 	links: PropTypes.array,
 	props: PropTypes.object
-  }
+}
 
 NavigationDesktop.defaultProps = {
 	links: [],
 	props: {}
-  }
+}

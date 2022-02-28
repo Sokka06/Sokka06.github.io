@@ -21,7 +21,7 @@ const MediaSlide = ({media}) => {
 	const path = `./${media.publicURL}`
 	return (
 		(media.extension === 'jpg' ? (
-			<Image src={path} objectFit='cover' height={'full'}/>
+			<Image src={path} objectFit='cover' height={'full'} width={'full'}/>
 		) : (
 			<ReactPlayer className='react-player' url={path} height={'100%'} width={'100%'} playing={swiperSlide.isActive} loop muted playsinline/>
 		))
@@ -35,8 +35,8 @@ export default function MediaCarousel (props) {
 		<Swiper navigation={true} pagination={{
           clickable: true,
         }} modules={[Navigation, Pagination]} grabCursor={true}>
-			{props.media.map(item => (
-			<SwiperSlide>
+			{props.media.map((item, index) => (
+			<SwiperSlide key={index}>
 				<MediaSlide media={item}/>
 			</SwiperSlide>
 			))}
