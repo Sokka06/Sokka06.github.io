@@ -14,6 +14,8 @@ import Header from "./header"
 import Nav from "./nav"
 import Footer from "./footer"
 import Background from "./background";
+import * as Scroll from 'react-scroll';
+import ScrollToTopButton from "./ScrollToTopButton"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,6 +31,7 @@ const Layout = ({ children }) => {
 	return (
 	<>
 		<Background/>
+		<ScrollToTopButton/>
 		<Header />
 		<Flex direction="column" align="center" maxW={{ xl: "1200px" }} m="0 auto">
 			<Container as="main" maxW='container.lg'>
