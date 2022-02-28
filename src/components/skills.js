@@ -28,6 +28,8 @@ const skills = [
 	},
   ]
 
+// https://chakra-ui.com/docs/layout/wrap
+
   function SkillIcon ({item}) {
 	return(
 		<Tag variant={'solid'} colorScheme='green'>{item.name}</Tag>

@@ -27,7 +27,7 @@ export default function GithubCard (props) {
 				borderRadius='lg' 
 				shadow='lg' 
 				overflow='hidden'
-				bgGradient='linear(to-tr, red.600, pink.600)' >
+				bgGradient='linear(to-tr, red.600 -25%, pink.600 125%)' >
 				<LinkOverlay href={props.repo.url} height='full' width='full' >
 					<Flex p='3' direction={'column'} height='full'>
 						<Box 
@@ -52,7 +52,6 @@ export default function GithubCard (props) {
 								size={tagSize}
 								borderRadius='full'
 								variant='solid'
-								colorScheme={'red'}
 							>
 								<TagLabel>Unity</TagLabel>
 							</Tag>
@@ -60,8 +59,6 @@ export default function GithubCard (props) {
 								size={tagSize}
 								borderRadius='full'
 								variant='solid'
-								variant='solid'
-								colorScheme={'red'}
 							>
 								<TagLabel>C#</TagLabel>
 							</Tag>
