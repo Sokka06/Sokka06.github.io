@@ -40,7 +40,16 @@ plugins: [
 		},
 	},
 	`gatsby-transformer-sharp`,
-	`gatsby-plugin-sharp`,
+	{
+		resolve: `gatsby-plugin-sharp`,
+		options: {
+		  defaults: {
+			placeholder: `blurred`,
+			quality: 75,
+			backgroundColor: `transparent`,
+		  }
+		}
+	  },
 	{
 		resolve: `gatsby-plugin-manifest`,
 		options: {

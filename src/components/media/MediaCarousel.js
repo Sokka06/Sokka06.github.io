@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from 'prop-types';
 
 import { Container, Heading, HStack, Tag, TagLabel, Text, Box, Flex, useBreakpointValue, VStack, AspectRatio, Link, Image } from "@chakra-ui/react"
-
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 
 // Import Swiper React components
 import { Swiper, SwiperSlide, useSwiperSlide } from 'swiper/react';
@@ -21,7 +21,7 @@ const MediaSlide = ({media}) => {
 	const path = `./${media.publicURL}`
 	return (
 		(media.extension === 'jpg' ? (
-			<Image src={path} objectFit='cover' height={'full'} width={'full'}/>
+			<GatsbyImage image={getImage(media)} objectFit='cover' alt='Slide image' style={{ height: "100%", width: "100%" }} />
 		) : (
 			<ReactPlayer className='react-player' url={path} height={'100%'} width={'100%'} playing={swiperSlide.isActive} loop muted playsinline/>
 		))

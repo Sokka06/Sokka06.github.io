@@ -75,7 +75,7 @@ ScrollToTopButton.propTypes = {
 }
 
 ScrollToTopButton.defaultProps = {
-	minScroll: 256,
-	offset: {x: 10, y: 20},
+	minScroll: 512,
+	offset: {x: 8, y: 16},
 	size: 16
 }

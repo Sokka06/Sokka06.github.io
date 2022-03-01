@@ -1,17 +1,16 @@
 import * as React from "react"
-import { Box, Container, Stack, Text, Heading, Image, Flex, Spacer, AspectRatio, Link } from "@chakra-ui/react"
+import { Box, Container, Text, Heading, AspectRatio, Link } from "@chakra-ui/react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Hello from '../content/hello.mdx'
-import AvatarImg from "../images/avatar.jpg"
 import Section from "./common/Section";
 
 import { MDXProvider } from "@mdx-js/react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const AvatarImage = () => (
-	<AspectRatio ratio={1} width='xs' shadow='lg'>
-		<Image src={AvatarImg} alt='Avatar' rounded='md' objectFit='cover' draggable='false'/>
+	<AspectRatio ratio={1} width='xs' shadow='lg' rounded='md' overflow={'hidden'}>
+		{/* <Image src={AvatarImg} alt='Avatar' objectFit='cover' draggable='false'/> */}
+		<StaticImage src="../images/avatar.jpg" alt="Avatar" draggable={false} />
 	</AspectRatio>
 )
 

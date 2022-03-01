@@ -59,6 +59,7 @@ const PageView = (props) => {
 		size={'xs'}
 		variant={selected ? 'solid' : 'ghost'}
 		isRound
+		shadow={'md'}
 		onClick={pageSelectedHandler}
 		{...getEventListener(pageSelectedHandler)}
 		icon={<CircleIcon color={'gray.100'} opacity={selected ? '1' : '0.25'} />} />

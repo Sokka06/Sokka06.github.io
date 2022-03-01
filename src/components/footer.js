@@ -26,7 +26,6 @@ export default function Github() {
 	const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
 
 	function OnChange(inView, entry) {
-		console.log('Inview:', inView);
 		{inView ? onOpen() : onClose()}
 	}
 

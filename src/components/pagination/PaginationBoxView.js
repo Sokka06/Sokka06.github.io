@@ -566,6 +566,7 @@ export default class PaginationBoxView extends Component {
 		<HStack>
 			<IconButton
 			size={'md'}
+			shadow={'md'}
 			variant={isPreviousDisabled ? 'ghost' : 'solid'}
 			onClick={this.handlePreviousPage}
 			{...this.getEventListener(this.handlePreviousPage)} 
@@ -573,6 +574,7 @@ export default class PaginationBoxView extends Component {
 				{this.pagination()}
 			<IconButton
 			size={'md'}
+			shadow={'md'}
 			variant={isNextDisabled ? 'ghost' : 'solid'}
 			onClick={this.handleNextPage}
 			{...this.getEventListener(this.handleNextPage)} 

@@ -44,7 +44,7 @@ const options = {
 		enable: true,
 		outMode: "out",
 		random: true,
-		speed: 5,
+		speed: 2,
 		straight: true,
 		/* attract: {
 			enable: true,

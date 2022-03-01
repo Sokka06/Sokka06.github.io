@@ -25,6 +25,9 @@ export default function Projects () {
 						relativePath
 						extension
 						absolutePath
+						childImageSharp {
+							gatsbyImageData
+						}
 					  }
 				  }
 				  body
@@ -67,17 +70,6 @@ export default function Projects () {
 	<Box>
 		<Box>
 		<Heading py={'3'}>Projects</Heading>
-		<Container centerContent py={'5'}>
-			<Pagination
-			breakLabel="..."
-			nextLabel="next >"
-			onPageChange={handlePageClick}
-			pageRangeDisplayed={1}
-			pageCount={pageCount}
-			previousLabel="< previous"
-			renderOnZeroPageCount={null}
-			/>
-		</Container>
 		</Box>
 		{currentItems && currentItems.map((project, index) => (
 			<Box key={project.id}>
@@ -90,6 +82,17 @@ export default function Projects () {
 				))}
 			</Box>
     	))}
+		<Container centerContent py={'5'}>
+			<Pagination
+			breakLabel="..."
+			nextLabel="next >"
+			onPageChange={handlePageClick}
+			pageRangeDisplayed={1}
+			pageCount={pageCount}
+			previousLabel="< previous"
+			renderOnZeroPageCount={null}
+			/>
+		</Container>
 	</Box>
 	)
 }

@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Badge, Box, Container, Heading, HStack, Icon, Text, VStack, SimpleGrid, Tag, Stack } from "@chakra-ui/react"
+import { Badge, Box, Container, Heading, HStack, Icon, Text, VStack, SimpleGrid, Tag, Stack, Wrap } from "@chakra-ui/react"
 
 const skills = [
 	{
@@ -23,7 +23,7 @@ const skills = [
 		items: [
 			{name: 'React'},
 			{name: 'Firebase'},
-			{name: 'Chakra UI'}
+			{name: 'Chakra UI'},
 		]
 	},
   ]
@@ -43,11 +43,11 @@ export default function Skills () {
 			{skills.map((item, index) => (
 				<VStack key={item.title}>
 					<Heading size={'sm'} fontWeight='semibold' lineHeight='tight'>{item.title}</Heading>
-					<HStack borderWidth='1px' borderRadius='lg' p='3' shadow={'md'}>
-					{item.items.map((name) => (
-						<SkillIcon item={name} key={name.name}/>
-					))}
-					</HStack>
+					<Wrap borderWidth='1px' borderRadius='lg' p='3' shadow={'md'} shouldWrapChildren justify={'center'}>
+						{item.items.map((name) => (
+							<SkillIcon item={name} key={name.name}/>
+						))}
+					</Wrap>
 				</VStack>
 			))}
 		</SimpleGrid>

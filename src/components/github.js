@@ -15,7 +15,6 @@ import GithubCard from "./GithubCard"
 const MotionButton = motion(Button)
 const MotionGrid = motion(SimpleGrid)
 
-
 export default function Github() {
 	const data = useStaticQuery(
 	  graphql`
@@ -33,6 +32,14 @@ export default function Github() {
         			openGraphImageUrl
         			usesCustomOpenGraphImage
        				stargazerCount
+					repositoryTopics {
+						nodes {
+							topic {
+								id
+								name
+							}
+						}
+					}
 				  }
 				}
 			  }
@@ -45,9 +52,6 @@ export default function Github() {
   
 	const loadAmount = 6
 	const repos = data.allGithubData.nodes[0].data.user.repositories.nodes
-	/* repeat array 5 times
-	const repos = Array.from({ length: 5 }, () => data.allGithubData.nodes[0].data.user.repositories.nodes).flat() 
-	*/
 
 	// State for the list
 	const [list, setList] = useState([...repos.slice(0, loadAmount)])
@@ -104,7 +108,7 @@ export default function Github() {
 			</Text>
 		</Box>
 
-		{repos.length > 0 ? 
+		{list.length > 0 ? 
 			<Box>
 				<MotionGrid
 				{...animations}
