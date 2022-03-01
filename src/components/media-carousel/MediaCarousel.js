@@ -17,7 +17,6 @@ import './MediaCarousel.css'
 
 const MediaSlide = ({media}) => {
 	const swiperSlide = useSwiperSlide();
-	console.log(media)
 	const path = `./${media.publicURL}`
 	return (
 		(media.extension === 'jpg' ? (
