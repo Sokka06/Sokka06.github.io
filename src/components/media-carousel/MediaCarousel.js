@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 
 import ReactPlayer from 'react-player/lazy'
-import './media.css'
+import './MediaCarousel.css'
 
 const MediaSlide = ({media}) => {
 	const swiperSlide = useSwiperSlide();

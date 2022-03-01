@@ -1,6 +1,6 @@
 import * as React from "react"
 import Particles from "react-tsparticles";
-import './background.css'
+import './Background.css'
 
 //https://particles.js.org/docs/interfaces/Options_Interfaces_Particles_IParticles.IParticles.html
 const options = {

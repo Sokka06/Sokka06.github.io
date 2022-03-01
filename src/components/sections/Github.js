@@ -10,7 +10,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import { motion } from "framer-motion"
 
-import GithubCard from "./GithubCard"
+import GithubCard from "../github-card/"
 
 const MotionButton = motion(Button)
 const MotionGrid = motion(SimpleGrid)

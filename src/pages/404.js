@@ -3,8 +3,8 @@ import {ChakraProvider, Container, Box, Text, Heading } from "@chakra-ui/react"
 
 import theme from "../@chakra-ui/gatsby-plugin/theme"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/global/Layout"
+import Seo from "../components/global/Seo"
 
 const NotFoundPage = () => (
 	<ChakraProvider theme={theme}>

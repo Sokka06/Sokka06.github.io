@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
 import { Box, Heading, Divider, Container } from "@chakra-ui/react"
-import Pagination from './pagination'
+import Pagination from '../pagination'
 
 import { CgChevronLeft, CgChevronRight } from '@react-icons/all-files/'
 import { useStaticQuery, graphql, Link } from "gatsby";
-import ProjectLayout from "./ProjectLayout";
+import ProjectLayout from '../project-layout/'
 
 // https://codesandbox.io/s/88kf4?file=/src/ItemList.js pagination
 

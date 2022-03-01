@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import { Flex  } from "@chakra-ui/react"
 import { useDisclosure, useColorMode, useBreakpointValue } from '@chakra-ui/react'
 
-import NavigationDesktop from "./header/NavigationDesktop"
-import NavigationMobile from "./header/NavigationMobile"
+import NavigationDesktop from "./NavigationDesktop"
+import NavigationMobile from "./NavigationMobile"
 
 const navigation = [
 	{ name: 'Hello', href: '#hello' },

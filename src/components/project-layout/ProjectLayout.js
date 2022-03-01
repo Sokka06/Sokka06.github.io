@@ -8,7 +8,7 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Container, Heading, HStack, Tag, TagLabel, Text, Box, Flex, useBreakpointValue, VStack, AspectRatio, Link, Image, Spacer, Divider } from "@chakra-ui/react";
 
-import MediaCarousel from "./media/MediaCarousel"
+import MediaCarousel from "../media-carousel/MediaCarousel"
 
 const components = {
 	h1: Heading,
