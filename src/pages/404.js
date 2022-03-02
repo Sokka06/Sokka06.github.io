@@ -1,23 +1,21 @@
 import * as React from "react"
-import {ChakraProvider, Container, Box, Text, Heading } from "@chakra-ui/react"
-
-import theme from "../@chakra-ui/gatsby-plugin/theme"
+import {Container, Box, Text, Heading } from "@chakra-ui/react"
 
 import Layout from "../components/global/Layout"
 import Seo from "../components/global/Seo"
 
 const NotFoundPage = () => (
-	<ChakraProvider theme={theme}>
+	<>
 		<Seo title="Secret" />
 		<Layout>
-		<Container centerContent>
+		<Container centerContent py={'10'}>
 			<Box>
 				<Heading py='5'>You just found a secret page!</Heading>
 				<Text fontSize='xl'>Feel free to brag to all your friends.</Text>
 			</Box>
 			</Container>
 		</Layout>
-  </ChakraProvider>
+  </>
 )
 
 export default NotFoundPage

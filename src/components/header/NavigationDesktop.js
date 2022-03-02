@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import { Box, Link, Button, HStack  } from "@chakra-ui/react"
 
 import { motion } from "framer-motion"
-import { SunIcon, MoonIcon } from '@chakra-ui/icons'
-import {IconButton } from '@chakra-ui/react'
 
 
 function NavLink({ text, href, ...props })  {

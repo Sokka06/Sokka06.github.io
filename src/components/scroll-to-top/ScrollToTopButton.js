@@ -1,6 +1,6 @@
 import React, {useEffect} from "react"
 import PropTypes from 'prop-types';
-import { Box, IconButton, Icon, Fade, useBoolean } from "@chakra-ui/react";
+import { Box, IconButton, Fade, useBoolean } from "@chakra-ui/react";
 import { motion } from "framer-motion"
 
 import { ChevronUpIcon } from '@chakra-ui/icons'
