@@ -29,18 +29,20 @@ function Header(props) {
 			roundedBottom='md' 
 			bgGradient='linear-gradient(38deg, #171923 0%, #1A202C 46%, #171923 100%)'  */
 			zIndex='docked'
-			justify={!mobile ? 'center' : 'flex-end'}>
+			justify={'center'}>
 				{!mobile ?
 					<NavigationDesktop links={navigation}/> : <NavigationMobile links={navigation}/>
 			}
 			</Flex>
 	)
-  }
+}
 
-  Header.defaultProps = {
-  }
-  
-  Header.propTypes = {
-  }
+Header.defaultProps = {
+
+}
+
+Header.propTypes = {
+
+}
 
 export default Header

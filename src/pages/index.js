@@ -16,7 +16,7 @@ const IndexPage = () => (
 	<ChakraProvider theme={theme}>
 		<Seo title="Portfolio" />
 		<Layout>
-			<Empty space={3} />
+			{/* <Empty space={3} /> */}
 
 			<Section name='hello'>
 				<Hero/>

@@ -2,6 +2,7 @@ import * as React from "react"
 import { Box, Container, Text, Heading, AspectRatio, Link } from "@chakra-ui/react"
 import { StaticImage } from "gatsby-plugin-image"
 
+import Empty from '../common/Empty'
 import Hello from '../../content/hello.mdx'
 
 import { MDXProvider } from "@mdx-js/react"
@@ -26,6 +27,9 @@ const Hero = () => {
 		<Box>
 			<AvatarImage/>
 		</Box>
+
+		<Empty space={3} /> 
+
 		<Box>
 			<MDXProvider components={components}>
 				<Hello />

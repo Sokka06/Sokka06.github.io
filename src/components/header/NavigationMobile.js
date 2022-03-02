@@ -12,6 +12,7 @@ export default function NavigationMobile (props) {
 				aria-label='Options'
 				icon={<HamburgerIcon />}
 				variant='outline'
+				boxSize={'12'}
 			/>
 			<MenuList>
 			{props.links.map((item) => (

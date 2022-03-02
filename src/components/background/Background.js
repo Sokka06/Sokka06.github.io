@@ -5,8 +5,8 @@ import './Background.css'
 //https://particles.js.org/docs/interfaces/Options_Interfaces_Particles_IParticles.IParticles.html
 const options = {
 	fullScreen: {
-		enable: true, 
-		zIndex: 0
+		enable: false, 
+		zIndex: -10
 	},
 	fpsLimit: 30,
 	pauseOnBlur: true,
