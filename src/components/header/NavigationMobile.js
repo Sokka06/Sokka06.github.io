@@ -16,7 +16,7 @@ export default function NavigationMobile (props) {
 			/>
 			<MenuList>
 			{props.links.map((item) => (
-							<MenuItem as='a' href={item.href}>
+							<MenuItem as='a' href={item.href} key={item.name}>
 							{item.name}
 							</MenuItem>
 							))}
