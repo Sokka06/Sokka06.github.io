@@ -30,9 +30,8 @@ function Header(props) {
 			bgGradient='linear-gradient(38deg, #171923 0%, #1A202C 46%, #171923 100%)'  */
 			zIndex='docked'
 			justify={'center'}>
-				{!mobile ?
-					<NavigationDesktop links={navigation}/> : <NavigationMobile links={navigation}/>
-			}
+				<NavigationDesktop links={navigation}/>
+				{/* !mobile ? <NavigationDesktop links={navigation}/> : <NavigationMobile links={navigation}/> */}
 			</Flex>
 	)
 }
