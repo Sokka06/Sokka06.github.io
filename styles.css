@@ -1,0 +1,13 @@
+/* 
+Attempts to fix the white bar appearing in the bottom of the screen on mobile 
+when address bar changes size that's only present in built version of the site. 
+*/
+
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}

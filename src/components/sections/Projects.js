@@ -52,7 +52,6 @@ export default function Projects () {
 		useEffect(() => {
 			// Fetch items from another resources.
 			const endOffset = itemOffset + itemsPerPage;
-			console.log(`Loading items from ${itemOffset} to ${endOffset}`);
 			setCurrentItems(projects.slice(itemOffset, endOffset));
 			setPageCount(Math.ceil(projects.length / itemsPerPage));
 		}, [itemOffset, itemsPerPage]);
