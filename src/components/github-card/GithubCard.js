@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useState, useEffect } from "react"
 import PropTypes from 'prop-types';
-import { AspectRatio, Box, LinkBox, LinkOverlay, Stack, HStack, Tag, TagLabel, Flex, Spacer, useBreakpointValue, Wrap } from "@chakra-ui/react"
+import { AspectRatio, Box, LinkBox, LinkOverlay, Tag, Flex, useBreakpointValue, Wrap } from "@chakra-ui/react"
 import { motion } from "framer-motion"
 
 const MotionLinkBox = motion(LinkBox)

@@ -6,7 +6,7 @@
  */
 
 import * as React from "react"
-import {Flex, Container, Spacer, Box } from "@chakra-ui/react"
+import {Flex, Container } from "@chakra-ui/react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 

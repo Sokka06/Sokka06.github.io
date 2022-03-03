@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Center, Box, Heading, Text, HStack, IconButton, Link, Container, Spacer, useMediaQuery } from "@chakra-ui/react"
+import { Box, Heading, Text, HStack, IconButton, Link, Container, Spacer } from "@chakra-ui/react"
 
 import { MdEmail } from "@react-icons/all-files/md/MdEmail";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";

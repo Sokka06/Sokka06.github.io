@@ -14,14 +14,6 @@ export default function ScrollToTopButton(props) {
 	const HandleScroll = () => {
 		if (isVisible !== window.pageYOffset > props.minScroll)
 			setVisible.toggle()
-		
-        /* if (window.pageYOffset > props.minScroll) 
-		{
-            if (!isVisible) setVisible.on()
-        } else 
-		{
-            if (isVisible) setVisible.off()
-        } */
     }
 
 	function OnClick() {

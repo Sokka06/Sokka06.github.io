@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import PageView from './PageView';
 import BreakView from './BreakView';
 import { classNameIfDefined } from './utils';
-import { Button, HStack, IconButton } from '@chakra-ui/react';
+import { HStack, IconButton } from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 
 export default class PaginationBoxView extends Component {

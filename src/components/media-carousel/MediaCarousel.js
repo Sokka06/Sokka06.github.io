@@ -1,8 +1,8 @@
 import * as React from "react"
 import PropTypes from 'prop-types';
 
-import { Container, Heading, HStack, Tag, TagLabel, Text, Box, Flex, useBreakpointValue, VStack, AspectRatio, Link, Image } from "@chakra-ui/react"
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { AspectRatio } from "@chakra-ui/react"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 // Import Swiper React components
 import { Swiper, SwiperSlide, useSwiperSlide } from 'swiper/react';

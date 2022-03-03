@@ -2,7 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Button, Icon, IconButton } from '@chakra-ui/react';
+import { Box, Icon, IconButton } from '@chakra-ui/react';
 
 const CircleIcon = (props) => (
 	<Icon viewBox='0 0 200 200' {...props}>

@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
 import PropTypes from 'prop-types';
 
 // Importing all the styled components as Components.

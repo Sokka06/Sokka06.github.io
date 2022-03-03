@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Badge, Box, Container, Heading, HStack, Icon, Text, VStack, SimpleGrid, Tag, Stack, Wrap } from "@chakra-ui/react"
+import { Container, Heading, VStack, SimpleGrid, Tag, Wrap } from "@chakra-ui/react"
 
 const skills = [
 	{

@@ -1,7 +1,6 @@
 import * as React from "react"
 import { useState, useEffect } from "react"
 import { Container, Box, SimpleGrid, Heading, Text, Link, Button, Center } from "@chakra-ui/react"
-import { useBoolean } from "@chakra-ui/react"
 
 import { ExternalLinkIcon } from "@chakra-ui/icons"
 import {FaGithub} from '@react-icons/all-files/fa/FaGithub'
