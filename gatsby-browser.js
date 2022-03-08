@@ -13,8 +13,6 @@ import { Layout } from "./src/components/global/Layout"
 import { ChakraProvider } from "@chakra-ui/provider"
 import theme from "./src/@chakra-ui/gatsby-plugin/theme"
 
-import "./styles.css"
-
 /* 
 export const wrapPageElement = ({ element }) => <Layout>{element}</Layout> */
 

@@ -9,10 +9,10 @@ const MotionIconButton = motion(IconButton)
 
 export default function ScrollToTopButton(props) {
 
-	const [isVisible, setVisible] = useBoolean()
+	const [isVisible, setVisible] = useBoolean(false)
 
 	const HandleScroll = () => {
-		if (isVisible !== window.pageYOffset > props.minScroll)
+		if (isVisible !== (window.pageYOffset > props.minScroll))
 			setVisible.toggle()
     }
 
@@ -21,9 +21,9 @@ export default function ScrollToTopButton(props) {
 	}
 
 	useEffect(() => {
-        window.addEventListener(`scroll`, HandleScroll)
+        window.addEventListener('scroll', HandleScroll)
 
-        return () => window.removeEventListener(`scroll`, HandleScroll)
+        return () => window.removeEventListener('scroll', HandleScroll)
     })
 
 	return (
@@ -37,7 +37,7 @@ export default function ScrollToTopButton(props) {
 			height={props.size}
 			padding={'0'}
 			borderRadius={'full'}
-			shadow={'lg'}
+			shadow={'dark-lg'}
 			bgGradient={'linear(to-tr, red.500, pink.400)'}
 			color='gray.100'
 			opacity={'0.75'}

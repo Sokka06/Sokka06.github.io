@@ -13,8 +13,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../header"
 import Footer from "../sections/Footer"
 import Background from "../background";
-/* import * as Scroll from 'react-scroll'; */
-import ScrollToTopButton from '../scroll-to-top'
+import ScrollToTopButton from "../scroll-to-top"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
