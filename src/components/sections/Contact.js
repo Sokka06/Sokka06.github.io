@@ -18,7 +18,7 @@ const MotionLink = motion(Link)
 function SocialButton({ label, href, icon, ...props }) {
 	return (
 	  <MotionLink whileHover={{ scale: 1.1 }} href={href}>
-		  <IconButton size='lg' variant='outline' colorScheme='teal' shadow='md' aria-label={label} icon={icon} {...props} />
+		  <IconButton size='lg' variant='outline' colorScheme='teal' shadow='md' aria-label={label} title={label} icon={icon} {...props} />
 	  </MotionLink>
 	);
   }

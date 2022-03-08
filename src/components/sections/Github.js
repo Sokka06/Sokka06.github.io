@@ -127,7 +127,8 @@ export default function Github() {
 							whileHover={{ scale: 1.1 }}
 							variant='outline' 
 							colorScheme='teal' 
-							size='lg' 
+							size='lg'
+							aria-label='Show More'
 							onClick={handleLoadMore}>
 								Show More
 							</MotionButton>

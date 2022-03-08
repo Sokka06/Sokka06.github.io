@@ -23,7 +23,7 @@ const components = {
 
 const Hero = () => {
 	return(
-		<Container centerContent>
+		<Container centerContent maxW={'container.md'} >
 		<Box>
 			<AvatarImage/>
 		</Box>

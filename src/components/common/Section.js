@@ -8,13 +8,17 @@ export default function Section (props) {
 
 	const [show, setShow] = React.useState(false)
 
+	function OnChange(inView) {
+		if(!show && inView)
+			setShow(true)
+	}
+
 	return(
 		<Box id={props.name} >
-			<InView onChange={() => setShow(true)} triggerOnce>
-			<Fade in={show} delay={0}>
-			{props.children}
-      </Fade>
-				
+			<InView onChange={OnChange} triggerOnce threshold={0.5}>
+				<Fade in={show} delay={0}>
+					{props.children}
+				</Fade>
 			</InView>
 		</Box>
 	)
