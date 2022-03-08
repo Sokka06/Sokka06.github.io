@@ -2,6 +2,7 @@ import React, {useEffect} from "react"
 import PropTypes from 'prop-types';
 import { Box, IconButton, Fade, useBoolean } from "@chakra-ui/react";
 import { motion } from "framer-motion"
+import {animateScroll as scroll} from 'react-scroll'
 
 import { ChevronUpIcon } from '@chakra-ui/icons'
 
@@ -17,7 +18,10 @@ export default function ScrollToTopButton(props) {
     }
 
 	function OnClick() {
-		window['scrollTo']({ top: 0, behavior: 'smooth' })
+		scroll.scrollToTop({
+			duration: 500,
+			delay: 100
+		  });
 	}
 
 	useEffect(() => {
