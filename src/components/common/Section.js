@@ -15,7 +15,7 @@ export default function Section (props) {
 
 	return(
 		<Box id={props.name} >
-			<InView onChange={OnChange} triggerOnce threshold={0.5}>
+			<InView onChange={OnChange} triggerOnce threshold={0.333}>
 				<Fade in={show} delay={0}>
 					{props.children}
 				</Fade>
